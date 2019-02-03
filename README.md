@@ -102,9 +102,13 @@ https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-i
 
 ![dataset image](https://github.com/andren/iot-intro-workshop/blob/master/images/dataset.png)
 
+- Add a new dashboard (Top-right _+Create>Dashboard_)
+- Add a new streaming data tile to the empty dashboard (Top center bar _+Add Tile > Custom Streaming Data_)
+- Select your dataset
+- Change _Visualization Type_ to _Line Chart_ and configure it like so:
 
-- Add a new "Dashboard"
-- Add a new "Tile
+![customStream image](https://github.com/andren/iot-intro-workshop/blob/master/images/customStream.png)
 
+- Add more dashboards and experiment with the visuals you can create, here is an example:
 
-
+![finalDashboard image](https://github.com/andren/iot-intro-workshop/blob/master/images/finalDashboard.png)
