@@ -33,7 +33,9 @@ https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.azure-iot-tool
 
 ![VSC1 image](https://github.com/andren/iot-intro-workshop/blob/master/images/VSC1.png)
 
-## 3) Create an IoT Hub and add a simulated device
+# Simulated device C2D and D2C messages
+
+## 1) Create an IoT Hub and add a simulated device
 
 - Follow this tutorial and stop when you reach "Run a sample application on Pi web simulator"
 https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started
@@ -59,8 +61,38 @@ You will find it here:
 
 -----
 
-## 4) Monitor for messages arriving to the IoT Hub with VSC
-
+## 2) Monitor for messages arriving to the IoT Hub with VSC
+- Open VSC
 - F1 > ```Set IoT Hub connection string```
 
+You should be able to see your devices in the extension tab (image below)
+
+- Right-click your device and "Start Monitoring D2C Message"
+
+![VSCMonitor image](https://github.com/andren/iot-intro-workshop/blob/master/images/VSCMonitor.png)
+
+- Return to the previous tutorial link and finish the "Run a sample application on Pi web simulator" step
+
+You should now be able to see in real-time:
+- D2C messages leaving the device on your browser
+- VSC pulling those same D2C messages from Azure into your VSC console
+
+![vscAndSimDevice image](https://github.com/andren/iot-intro-workshop/blob/master/images/vscAndSimDevice.png)
+
+## 3) Send a C2D message
+
+In VSC:
+- Right-click your device and select "Send C2D Message to device"
+- Write anything you want!
+- Verify you see that message in your simulated device browser tab:
+
+![D2C image](https://github.com/andren/iot-intro-workshop/blob/master/images/D2C.png)
+
+-----
+
+# Creating a dashboard from this device and its data
+
 https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi
+
+
+
