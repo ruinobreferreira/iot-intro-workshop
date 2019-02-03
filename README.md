@@ -92,7 +92,19 @@ In VSC:
 
 # Creating a dashboard from this device and its data
 
+- Follow this tutorial and stop at "Create and publish a Power BI report to visualize the data"
+
 https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-in-power-bi
+
+- Open your workspace
+- (you may have to click skip in an intro screen)
+- Click "Datasets" and verify your dataset is there. If it's not, double-check that the Stream Analytics job is running, your device is sending messages, and your IoT Hub is receiving them
+
+![dataset image](https://github.com/andren/iot-intro-workshop/blob/master/images/dataset.png)
+
+
+- Add a new "Dashboard"
+- Add a new "Tile
 
 
 
