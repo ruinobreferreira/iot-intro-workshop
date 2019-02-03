@@ -43,13 +43,15 @@ https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulato
 -----
 In Azure each resource has an associated resource key, it is what gives you access to a given resource so it should be carefully handled. It can be regenerated in case it is compromised.
 
-The *IoT Hub key* enables apps to manage the IoT Hub (check which devices it has, monitor messages, send C2D messages,...), just like the VSC extension we are going to use. The Hub key looks something like: ```HostName=<your_hub_name>.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=_____________=```
+The **IoT Hub key** enables apps to manage the IoT Hub (check which devices it has, monitor messages, send C2D messages,...), just like the VSC extension we are going to use. The Hub key looks something like: ```HostName=<your_hub_name>.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey=__________=```
+
 You will find it here:
 ![hubKey image](https://github.com/andren/iot-intro-workshop/blob/master/images/hubKey.png)
 
 
-The device key is the unique identifier for each device. It looks like this:
-```HostName=<your_hub_name>.azure-devices.net;DeviceId=<your_device_name>;SharedAccessKey=_____________=```
+The **device key** is the unique identifier for each device. It looks like this:
+```HostName=<your_hub_name>.azure-devices.net;DeviceId=<your_device_name>;SharedAccessKey=__________=```
+
 You will find it here:
 ![deviceKey image](https://github.com/andren/iot-intro-workshop/blob/master/images/deviceKey.png)
 
