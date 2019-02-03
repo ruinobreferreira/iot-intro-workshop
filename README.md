@@ -118,6 +118,7 @@ https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-live-data-visualization-i
 - Install the PowerBI app on your smartphone
 
 https://play.google.com/store/apps/details?id=com.microsoft.powerbim&hl=en
+
 https://itunes.apple.com/us/app/microsoft-power-bi/id929738808?mt=8
 
 - Configure your phone dashboard (Top-right _Web-View_ or _Phone-View_)
