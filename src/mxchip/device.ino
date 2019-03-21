@@ -2,9 +2,6 @@
 #include "DevKitMQTTClient.h"
 
 #include "Sensor.h" /* RGB_LED */
-//#include "SystemVersion.h"
-//#include "http_client.h"
-//#include "telemetry.h"
 
 static bool hasWifi = false;
 static bool hasIoTHub = false;
@@ -58,7 +55,7 @@ void loop() {
 
   char message[256];
 
-  if(hasWifi && IsButtonClicked(USER_BUTTON_A))
+  if(IsButtonClicked(USER_BUTTON_A))
   {
     delayValue = delayValue - 200;
     if ( delayValue < 500 )
@@ -66,7 +63,7 @@ void loop() {
   }
   else
   {
-    if(hasWifi && IsButtonClicked(USER_BUTTON_B))
+    if(IsButtonClicked(USER_BUTTON_B))
     {
       delayValue = delayValue + 200;
       if ( delayValue > 10000 )
@@ -113,15 +110,6 @@ void loop() {
   rgbLed.turnOff();
 
   delay(delayValue);
-
-  /*
-  if (DevKitMQTTClient_ReceiveEvent())
-  {
-    strcpy(message, "Message received");
-    delay(delayValue);
-    Screen.print(1, message);
-  }
-  */
 }
 
 bool IsButtonClicked(unsigned char ulPin)
