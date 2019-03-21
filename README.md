@@ -82,7 +82,7 @@ Getting **Things** to generate data, and connecting them to Azure:
 -----
 If this is your first time using Azure, check [this side-note] on how resource keys work for IoT.
 
-[this side-note]: ./keys.md
+[this side-note]:./keys.md
 -----
 - Open VS Code
 - F1 > ```set iot hub connection string```
