@@ -132,23 +132,21 @@ We have just told the IoT Hub that a new device called "my1stdevice" will be con
 We can now program this connection string on the device directly, which ensures the device was programmed by an IoT Hub admin. There are other (more secure!) ways of ensuring trust between a device and the IoT Hub. [More details on security.](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-security)
 
 
-## 4) Connect a simulated Raspberry Pi as "my1stdevice"
+## 4) Connect an MXChip to your IoT Hub
 
-You can use an [online simulated Raspberry Pi] as a device.
+**NOTE:** If you'd prefer to try this out with a Raspberry Pi (real or web-simulated) check out step 4 in [this page.](./raspberryPi.md).The steps below are for the MXChip.
 
-- Paste the device connection string in line 15 within the 'string' marks
-- Click "Run" on the bottom
-- Verify messages are being sent on the console
+- Configure the MXChip as described in the [get-started](https://microsoft.github.io/azure-iot-developer-kit/docs/get-started/) guide and make sure you can upload the *GetStarted.ino* sketch
 
-This device already has temperature and humidity defined as key:value pairs within the message body. These values are randomly generated within a reasonable interval.
+- Create a new project for the .ino code
+  - F1 > ```workbench create project```
 
-[Additional docs and details on this web simulator](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started)
+![workbenchCreate image](./images/workbenchCreate.png)
 
-Also, you can [run this code in a real Raspberry Pi].
+- Clone this repo
+- Copy the cloned _device.ino_ from this repo (./src/mxchip) to your project folder and overwrite the generated _device.ino_
 
-[run this code in a real Raspberry Pi]:https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-kit-node-get-started#set-up-raspberry-pi
-
-[online simulated Raspberry Pi]:https://azure-samples.github.io/raspberry-pi-web-simulator/#Getstarted
+This code is sending D2C messages every 5000ms by default. You can increment/decrement this time interval by holding the A/B buttons until the OLED screen shows the new time interval.
 
 <!-- TODO: Steps 4,5,6 are very device dependent. Make an MXChip "branch" -->
 
@@ -160,20 +158,20 @@ Also, you can [run this code in a real Raspberry Pi].
 ![VSCMonitor image](./images/VSCMonitor.png)
 
 You should now be able to see in real-time:
-- D2C messages leaving the device on your browser
+- D2C messages being sent by the MXChip at the frequency stated in the OLED screen
 - VS Code pulling those same D2C messages from Azure into your VS Code console
 
-![vscAndSimDevice image](./images/vscAndSimDevice.png)
+<!--![vscAndSimDevice image](./images/vscAndSimDevice.png)-->
 
-## 6) Send a C2D message
+<!-- ## 6) Send a C2D message
 
-- Open VC Code
+- Open VS Code
 - Right-click your device
 - Click "Send C2D Message to Device"
 - Write anything you want!
 - Verify you see that message in your simulated device browser tab:
 
-![C2D image](./images/C2D.png)
+![C2D image](./images/C2D.png) -->
 
 -----
 

@@ -1,2 +1,9 @@
 # Visual Studio cache/options directory
 .vs/
+
+# VS Code Workspace definitions
+.code-workspace/
+iot-intro-workshop-workspace.code-workspace
+
+# VS Code magic files
+.vscode/
