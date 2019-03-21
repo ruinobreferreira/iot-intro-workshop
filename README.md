@@ -134,6 +134,8 @@ We can now program this connection string on the device directly, which ensures 
 
 ## 4) Connect an MXChip to your IoT Hub
 
+**NOTE:** If you'd prefer to try this out with a Raspberry Pi (real or web-simulated) check out step 4 in [this page.](./raspberryPi.md).The steps below are for the MXChip.
+
 - Configure the MXChip as described in the [get-started](https://microsoft.github.io/azure-iot-developer-kit/docs/get-started/) guide and make sure you can upload the *GetStarted.ino* sketch
 
 - Create a new project for the .ino code
