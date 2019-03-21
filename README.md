@@ -74,7 +74,7 @@ Getting **Things** to generate data, and connecting them to Azure:
 
 
 - Open VS Code
-- Press F1 and type ```set iot hub connection string```
+- Press ```F1``` and type ```set iot hub connection string```
 
 ![vsCodeSetHubConnString image](./images/vsCodeSetHubConnString.png)
 
@@ -104,7 +104,7 @@ We can now program this connection string on the device directly, which ensures 
 - Configure the MXChip as described in the [get-started](https://microsoft.github.io/azure-iot-developer-kit/docs/get-started/) guide and make sure you can upload the *GetStarted.ino* sketch
 
 - Create a new project for the .ino code
-  - Press F1 and type ```workbench create project```
+  - Press ```F1``` and type ```workbench create project```
 
 ![workbenchCreate image](./images/workbenchCreate.png)
 
@@ -199,6 +199,7 @@ Getting **Insights** from the plots drawn by a UI reporting tool (PowerBI), usin
 
 -----
 This introductory workshop on Azure IoT has been delivered for:
+
 | Date | Audience |
 | ---- | ---- |
 | 21-23/03/2019 | PixelsCamp developer audience |
