@@ -109,7 +109,7 @@ We can now program this connection string on the device directly, which ensures 
 ![workbenchCreate image](./images/workbenchCreate.png)
 
 - Clone this repo
-- Copy the cloned _device.ino_ from this repo (./src/mxchip) to your project folder and overwrite the generated _device.ino_
+- Copy the cloned _device.ino_ from this repo (./src/mxchip/temperature) to your project folder and overwrite the generated _device.ino_
 
 This code is sending D2C messages every 5000ms by default. You can increment/decrement this time interval by holding the A/B buttons until the OLED screen shows the new time interval.
 
